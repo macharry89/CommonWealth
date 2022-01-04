@@ -1,12 +1,12 @@
 const DAO = artifacts.require("MultiSigWalletWithDailyLimit");
-const MemoriesERC20 = artifacts.require("MemoriesERC20");
-const TimeERC20 = artifacts.require("TimeERC20");
-const Staking = artifacts.require("Staking");
-const StakingHelper = artifacts.require("StakingHelper");
-const StandardBondingCalculator = artifacts.require("StandardBondingCalculator");
-const Treasury = artifacts.require("Treasury");
-const WonderZapIn = artifacts.require("WonderZapIn");
-const wMEMO = artifacts.require("wMEMO");
+// const MemoriesERC20 = artifacts.require("MemoriesERC20");
+// const TimeERC20 = artifacts.require("TimeERC20");
+// const Staking = artifacts.require("Staking");
+// const StakingHelper = artifacts.require("StakingHelper");
+// const StandardBondingCalculator = artifacts.require("StandardBondingCalculator");
+// const Treasury = artifacts.require("Treasury");
+// const WonderZapIn = artifacts.require("WonderZapIn");
+// const wMEMO = artifacts.require("wMEMO");
 
 module.exports = function (deployer) {
   const daoAddress = deployer.deploy(DAO);
