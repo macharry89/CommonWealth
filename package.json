@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_time_dev": "./node_modules/.bin/truffle run verify TimeERC20Token@0x0cF22e3d8dB81CB9e606f3a7837c48c1B6fC9a27 --network development"
+    "verify_staking_dev": "./node_modules/.bin/truffle run verify TimeStaking@0x3fE2770aD5053af32d80A3B2B8dC85f80c16eb9b --network development"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "@celo/ganache-cli": "^6.6.1",
     "@openzeppelin/contracts": "^4.1.0",
     "@truffle/hdwallet-provider": "^2.0.0",
+    "avalanche": "^3.10.2",
     "dotenv": "^8.2.0",
     "ganache-core": "^2.13.1-beta.1",
     "ipfs-http-client": "^49.0.4",
@@ -25,10 +26,10 @@
     "solidity-coverage": "^0.7.17",
     "solidity-docgen": "^0.5.13",
     "truffle": "^5.4.26",
-    "web3": "^1.6.1",
     "truffle-assertions": "^0.9.2",
-    "truffle-plugin-verify": "^0.5.16",
     "truffle-flattener": "^1.5.0",
-    "uuidv4": "^6.2.7"
+    "truffle-plugin-verify": "^0.5.16",
+    "uuidv4": "^6.2.7",
+    "web3": "^1.6.1"
   }
 }
