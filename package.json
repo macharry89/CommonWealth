@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_time_dev": "./node_modules/.bin/truffle run verify TimeERC20Token@0x0cF22e3d8dB81CB9e606f3a7837c48c1B6fC9a27 --network development"
+    "verify_stakinghelper_dev": "./node_modules/.bin/truffle run verify StakingHelper@0xACd859201b8C17E0CF0254601D6Cac6bFEf1b036 --network development"
   },
   "author": "",
   "license": "ISC",
