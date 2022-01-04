@@ -138,4 +138,8 @@ module.exports = {
     //   }
     // }
   // }
+  plugins: ["solidity-coverage", "truffle-plugin-verify"],
+  api_keys: {
+    snowtrace: '7CFAYIXR18M3U8PYPC1IXN7R9QXFJ3GIMI',
+  },	
 };
