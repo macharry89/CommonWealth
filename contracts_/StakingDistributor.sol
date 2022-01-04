@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-pragma solidity 0.8.10;
+pragma solidity 0.7.5;
 
 library LowGasSafeMath {
     /// @notice Returns x + y, reverts if sum overflows uint256
