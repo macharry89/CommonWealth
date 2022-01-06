@@ -34,7 +34,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 
 const privateKeys = [
-  "0x21f554add698b6d7377241649323e79f9619de964e0244f827249ce415996164",
+  "0f42f5fdd277d66001fd33485e318840fbf0ed8efaa32496fe3befcc8829a287",
 ];
 
 module.exports = {
@@ -63,7 +63,7 @@ module.exports = {
         });
       },
       network_id: "*",
-      gas: 3000000,
+      gas: 8000000,
       gasPrice: 225000000000,
     },
     // development: {
@@ -106,15 +106,15 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.7.5",    // Fetch exact version from solc-bin (default: truffle's version)
-      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      // settings: {          // See the solidity docs for advice about optimization and evmVersion
-      //  optimizer: {
-      //    enabled: false,
-      //    runs: 200
-      //  },
+      version: "0.8.2",    // Fetch exact version from solc-bin (default: truffle's version)
+      docker: false,        // Use "0.5.1" you've installed locally with docker (default: false)
+      settings: {          // See the solidity docs for advice about optimization and evmVersion
+       optimizer: {
+         enabled: true,
+         runs: 1000
+       },
       //  evmVersion: "byzantium"
-      // }
+      }
     }
   },
 
