@@ -34,7 +34,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 
 const privateKeys = [
-  "0x21f554add698b6d7377241649323e79f9619de964e0244f827249ce415996164",
+  "0x2d2596400bf38a1af5d5e750e198276e36b12c6bbec5256b1b7689aa4af49ecc",
 ];
 
 module.exports = {
