@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_treasury_dev": "./node_modules/.bin/truffle run verify TimeTreasury@0x07B834EBAA121566F89cAc43d712813c91bF8bD0 --network fuji"
+    "verify_treasury_dev": "./node_modules/.bin/truffle run verify BlockTreasury@0xe3cC828D20C914C9b02e2ae7bc9CFDAD1fF3F9a8 --network fuji"
   },
   "author": "",
   "license": "ISC",
