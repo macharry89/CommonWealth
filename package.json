@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_bonddepo_dev": "./node_modules/.bin/truffle run verify TimeBondDepository@0xc479A5C8641bf2DC4Dd44ea534aB7F8DE111C7Ed --network development"
+    "verify_bonddepo_dev": "./node_modules/.bin/truffle run verify TimeBondDepository@0x3FA94a5491d7822C767c11cFA6d31938389eBFaf --network development"
   },
   "author": "",
   "license": "ISC",
