@@ -34,7 +34,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 
 const privateKeys = [
-  "0x21f554add698b6d7377241649323e79f9619de964e0244f827249ce415996164",
+  "0xcb4df9cfb42891776924a07289b9bdf9a3158212b3823aae527efff084fb8846",
 ];
 
 module.exports = {
@@ -63,7 +63,7 @@ module.exports = {
         });
       },
       network_id: "*",
-      gas: 3000000,
+      gas: 8000000,
       gasPrice: 225000000000,
     },
     // development: {
