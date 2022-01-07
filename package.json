@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_usv2factory_dev": "./node_modules/.bin/truffle run verify UniswapV2Factory@0x20cc2819DdfFc4D64261D749AE36a5b4c9B533bA --network development"
+    "verify_asv4router_dev": "./node_modules/.bin/truffle run verify AnyswapV4Router@0xc834A8223a439B3DF2dBA1Ab6751280195EDDebE --network development"
   },
   "author": "",
   "license": "ISC",

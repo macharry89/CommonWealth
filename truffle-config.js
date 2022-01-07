@@ -34,7 +34,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 
 const privateKeys = [
-  "0x21f554add698b6d7377241649323e79f9619de964e0244f827249ce415996164",
+  "0xa3f161bef0e11369e8457b3e9e04416f9391365d202029e842ed324237ce39cb",
 ];
 
 module.exports = {
@@ -76,7 +76,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.6.12",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.0",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {          // See the solidity docs for advice about optimization and evmVersion
        optimizer: {
