@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_memo_dev": "./node_modules/.bin/truffle run verify MEMOries@0x27483bd899EfF7D95d0ECb14a167eFcbEe919925 --network development"
+    "verify_zblock_dev": "./node_modules/.bin/truffle run verify zBlock@0x55e0196DDA713BD5bD34C6B986adabE011cB8138 --network development"
   },
   "author": "",
   "license": "ISC",
