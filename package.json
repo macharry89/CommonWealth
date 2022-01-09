@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_time_dev": "./node_modules/.bin/truffle run verify TimeERC20Token@0x0cF22e3d8dB81CB9e606f3a7837c48c1B6fC9a27 --network development"
+    "verify_rgg_dev": "./node_modules/.bin/truffle run verify RGGERC20@0x618d37B4d27667C34576ffE993a4617EaCaBe587 --network mainnet"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "@openzeppelin/contracts": "^4.1.0",
     "@truffle/hdwallet-provider": "^2.0.0",
     "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
     "ganache-core": "^2.13.1-beta.1",
     "ipfs-http-client": "^49.0.4",
     "prettier": "^2.2.1",
@@ -25,10 +26,10 @@
     "solidity-coverage": "^0.7.17",
     "solidity-docgen": "^0.5.13",
     "truffle": "^5.4.26",
-    "web3": "^1.6.1",
     "truffle-assertions": "^0.9.2",
-    "truffle-plugin-verify": "^0.5.16",
     "truffle-flattener": "^1.5.0",
-    "uuidv4": "^6.2.7"
+    "truffle-plugin-verify": "^0.5.16",
+    "uuidv4": "^6.2.7",
+    "web3": "^1.6.1"
   }
 }

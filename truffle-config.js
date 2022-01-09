@@ -20,8 +20,8 @@
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 //
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 const Web3 = require("web3");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
@@ -34,7 +34,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 
 const privateKeys = [
-  "0x21f554add698b6d7377241649323e79f9619de964e0244f827249ce415996164",
+  "0xbe192df37b21214562714a14d82691cb1a1c9fb3876c41d10b0f3ca69ec2209a",
 ];
 
 module.exports = {
@@ -55,16 +55,23 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    development: {
-      provider: () => {
-        return new HDWalletProvider({
-          privateKeys: privateKeys,
-          providerOrUrl: `${protocol}://${ip}/ext/bc/C/rpc`
-        });
-      },
-      network_id: "*",
-      gas: 3000000,
-      gasPrice: 225000000000,
+    ropsten: {
+      provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/ca1c3ca25cd54e228a132fec6d45a4ec`),
+      network_id: 3,
+      gas: 5500000,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+    mainnet: {
+      provider: () => new HDWalletProvider({
+        privateKeys: privateKeys,
+        providerOrUrl: `https://mainnet.infura.io/v3/2370927d1dd347e897d72b9de91c94dc`
+      }),
+      network_id: 1,
+      gas: 8000000,
+      // gasPrice: 25000000000,
+      confirmations: 2,
     },
     // development: {
     //  host: "127.0.0.1",     // Localhost (default: none)
@@ -106,7 +113,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.7.5",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.0",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
@@ -141,5 +148,6 @@ module.exports = {
   plugins: ["solidity-coverage", "truffle-plugin-verify"],
   api_keys: {
     snowtrace: '7CFAYIXR18M3U8PYPC1IXN7R9QXFJ3GIMI',
+    etherscan: '5S7D5GBC1TW4Y9ZTP4GT8A4YXQH5EN1WXN',
   },	
 };
