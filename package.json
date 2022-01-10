@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_asv5_dev": "./node_modules/.bin/truffle run verify AnyswapV5ERC20@0x941F11b4A4de9D2199330A99147A583Aa297D6AF --network development"
+    "verify_asv5_dev": "./node_modules/.bin/truffle run verify AnyswapV5ERC20@0x955647001c8933a9fefC193604eFeAbe281A7fDb --network development"
   },
   "author": "",
   "license": "ISC",
