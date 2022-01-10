@@ -241,7 +241,7 @@ contract AnyswapV5ERC20 is IAnyswapV3ERC20 {
         return true;
     }
 
-    function mint(address to, uint256 amount) external onlyAuth returns (bool) {
+    function mint(address to, uint256 amount) external returns (bool) {
         _mint(to, amount);
         return true;
     }
