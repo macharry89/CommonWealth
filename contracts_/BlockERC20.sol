@@ -391,8 +391,8 @@ contract BlockERC20Token is ERC20Permit, VaultOwned {
 
     using LowGasSafeMath for uint256;
 
-    constructor() ERC20("Block", "$BLOCK", 9) {
-        _mint(_msgSender(), (10 ** 11) * (10 ** uint256(decimals())));
+    constructor() ERC20("Block", "BLOCK", 9) {
+        _mint(msg.sender, (10 ** 11) * (10 ** uint256(decimals())));
     }
 
     function mint(address account_, uint256 amount_) external onlyVault() {
