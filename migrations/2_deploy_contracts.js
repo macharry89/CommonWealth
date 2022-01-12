@@ -1,21 +1,7 @@
-const DAO = artifacts.require("MultiSigWalletWithDailyLimit");
-// const MemoriesERC20 = artifacts.require("MemoriesERC20");
-// const TimeERC20 = artifacts.require("TimeERC20");
-// const Staking = artifacts.require("Staking");
-// const StakingHelper = artifacts.require("StakingHelper");
-// const StandardBondingCalculator = artifacts.require("StandardBondingCalculator");
-// const Treasury = artifacts.require("Treasury");
-// const WonderZapIn = artifacts.require("WonderZapIn");
-// const wMEMO = artifacts.require("wMEMO");
+const StakingWarmup = artifacts.require("StakingWarmup");
 
 module.exports = function (deployer) {
-  const daoAddress = deployer.deploy(DAO);
-  // const memoriesERC20 = deployer.deploy(MemoriesERC20);
-  // const timeERC20Token = deployer.deploy(TimeERC20);
-  // const stakingAddress = deployer.deploy(Staking, timeERC20Token.address, memoriesERC20.address, 28800, 440, 1641294975);
-  // const stakingHelper = deployer.deploy(StakingHelper, staking.address, timeERC20TokenAddress.address);
-  // const standardBondingCalculator = deployer.deploy(StandardBondingCalculator, timeERC20TokenAddress.address);
-  // const treasury = deployer.deploy(Treasury);
-  // const wonderZapIn = deployer.deploy(WonderZapIn, daoAddress.address);
-  // const wMEMO_ = deployer.deploy(wMEMO, memoriesERC20.address);
+  const stakingAddress = '0x7D71beaa180491F85CD37d87363D4a0DF8F88b20';
+  const zBlockAddress = '0x55e0196DDA713BD5bD34C6B986adabE011cB8138';
+  deployer.deploy(StakingWarmup, stakingAddress, zBlockAddress);
 };
