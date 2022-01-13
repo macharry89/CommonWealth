@@ -2,7 +2,7 @@ const StakingWarmup = artifacts.require("BlockStakingWarmup");
 // const Distributor = artifacts.require("Distributor");
 
 module.exports = function (deployer) {
-  const stakingAddress = '0xD597919c46240171737fa851c414b3AA51421bAd';
+  const stakingAddress = '0x3f90d1B553948d4807B5589C859CA9Ff0a34CE29';
   const zBlockAddress = '0x6C766bC8C5Cee89Ac43BD57630E3aF613e7EB89e';
   deployer.deploy(StakingWarmup, stakingAddress, zBlockAddress);
 
