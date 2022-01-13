@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_bonddepo_dev": "./node_modules/.bin/truffle run verify BlockBondDepository@0x4af30d088e296Bfd5835Fb0fDAA25fF34DB34E8f --network development"
+    "verify_bonddepo_dev": "./node_modules/.bin/truffle run verify BlockBondDepository@0xFC3Fa8AC7c89E9f6bD27e7c123191416B3206C7B --network development",
+    "verify_test_dev": "./node_modules/.bin/truffle run verify BlockBondDepository@0x78d6C6B90FB74aC5b272FdeA8eA4e7ec068674CF --network development"
   },
   "author": "",
   "license": "ISC",
