@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_zblock_main": "./node_modules/.bin/truffle run verify zBlock@0x5fD09339bdf3685d6A57Ed433165EbDC9770C218 --network mainnet",
+    "verify_zblock_main": "./node_modules/.bin/truffle run verify zBlock@0x2A392B930eE7B325aBA70C810199C97f6Ae3a252 --network mainnet",
     "verify_zblock_dev": "./node_modules/.bin/truffle run verify zBlock@0x6C766bC8C5Cee89Ac43BD57630E3aF613e7EB89e --network development"
   },
   "author": "",
