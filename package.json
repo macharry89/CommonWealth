@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "verify_warmup_dev": "./node_modules/.bin/truffle run verify BlockStakingWarmup@0xc710295fCE6f35De242C0F6391426bbdc1eab86D --network development",
-    "verify_distributor_dev": "./node_modules/.bin/truffle run verify Distributor@0x42aDB4c60DaE66Bb9a34BfEA3D4636EcCEBA9392 --network development"
+    "verify_distributor_dev": "./node_modules/.bin/truffle run verify Distributor@0x81c0d1F7A785766fAC0fA17CC4F3F689C431bF32 --network development"
   },
   "author": "",
   "license": "ISC",
