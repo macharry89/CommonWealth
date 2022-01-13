@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_block_dev": "./node_modules/.bin/truffle run verify BlockERC20Token@0xb1A1CF4BebB20A709c787b8b2f61A317F60d2DfC --network mainnet"
+    "verify_block_dev": "./node_modules/.bin/truffle run verify BlockERC20Token@0xb1A1CF4BebB20A709c787b8b2f61A317F60d2DfC --network development",
+    "verify_block_main": "./node_modules/.bin/truffle run verify BlockERC20Token@0x3820325e38050F878C66e3e544c2D0098c8e5a1F --network mainnet"
   },
   "author": "",
   "license": "ISC",
