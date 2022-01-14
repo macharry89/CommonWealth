@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_dao_dev": "./node_modules/.bin/truffle run verify MultiSigWalletWithDailyLimit@0x90E03F137288c7dC2aD942b25Faeaa98E5b3D0C9 --network development"
+    "verify_dao_dev": "./node_modules/.bin/truffle run verify MultiSigWalletWithDailyLimit@0x90E03F137288c7dC2aD942b25Faeaa98E5b3D0C9 --network development",
+    "verify_dao_main": "./node_modules/.bin/truffle run verify MultiSigWalletWithDailyLimit@0x7b689dFD314e49a996C879C9eBa8d9B62A24B6f7 --network mainnet"
   },
   "author": "",
   "license": "ISC",

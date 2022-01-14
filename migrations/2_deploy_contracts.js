@@ -1,6 +1,6 @@
 const DAO = artifacts.require("MultiSigWalletWithDailyLimit");
 
 module.exports = function (deployer) {
-  const ownerAddress = ['0xCCFF5aA7cfF282E33cA47CE89CA783C0B3dc963a', '0xBCe52BC91048F5E83610e79d6622F00e0b971843'];
-  deployer.deploy(DAO, ownerAddress, 2, 3000);
+  const ownerAddress = ['0x87cD7b8176CE030B47134688BcA6DD53cc85fF40', '0x5c6A1928ACfcDED5486b9E80773f3D458e4881C2'];
+  deployer.deploy(DAO, ownerAddress, 2, 10000000);
 };
