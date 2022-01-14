@@ -1,12 +1,12 @@
-const StakingWarmup = artifacts.require("BlockStakingWarmup");
-// const Distributor = artifacts.require("Distributor");
+// const StakingWarmup = artifacts.require("BlockStakingWarmup");
+const Distributor = artifacts.require("Distributor");
 
 module.exports = function (deployer) {
-  const stakingAddress = '0x3f90d1B553948d4807B5589C859CA9Ff0a34CE29';
-  const zBlockAddress = '0x6C766bC8C5Cee89Ac43BD57630E3aF613e7EB89e';
-  deployer.deploy(StakingWarmup, stakingAddress, zBlockAddress);
+  // const stakingAddress = '0x6d791Bf39D77831DE8c79C3EEa0554D2CE45FFcD';
+  // const zBlockAddress = '0x2A392B930eE7B325aBA70C810199C97f6Ae3a252';
+  // deployer.deploy(StakingWarmup, stakingAddress, zBlockAddress);
 
-  // const treasuryAddress = '0x0D0817A7De44FE7685c2e35144AD8dAB5Df062fB';
-  // const blockAddress = '0x6fF83eb56d9Df4007eb3593757351F2FB0011F19';
-  // deployer.deploy(Distributor, treasuryAddress, blockAddress, 28800, 1642024800);
+  const treasuryAddress = '0xfaCcc55Dd72a67BFF9416400646bc9052d68E979';
+  const blockAddress = '0x3820325e38050F878C66e3e544c2D0098c8e5a1F';
+  deployer.deploy(Distributor, treasuryAddress, blockAddress, 28800, 1642024800);
 };

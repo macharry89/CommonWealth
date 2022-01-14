@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "verify_warmup_dev": "./node_modules/.bin/truffle run verify BlockStakingWarmup@0x92F3C65302902C8B7CFF1D91c7AF4773cba625a7 --network development",
-    "verify_distributor_dev": "./node_modules/.bin/truffle run verify Distributor@0x81c0d1F7A785766fAC0fA17CC4F3F689C431bF32 --network development"
+    "verify_distributor_dev": "./node_modules/.bin/truffle run verify Distributor@0x81c0d1F7A785766fAC0fA17CC4F3F689C431bF32 --network development",
+    "verify_warmup_main": "./node_modules/.bin/truffle run verify BlockStakingWarmup@0xD3aC1F0199A3A7972D08079c0117967e21568fb9 --network mainnet",
+    "verify_distributor_main": "./node_modules/.bin/truffle run verify Distributor@0xEd410573a247822a1371EE854d50936625996e38 --network mainnet"
   },
   "author": "",
   "license": "ISC",
