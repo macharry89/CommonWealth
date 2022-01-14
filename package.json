@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_stakinghelper_dev": "./node_modules/.bin/truffle run verify BlockStakingHelper@0x3FeDF65b116ce5cF5F5C825185D717bfb27122A1 --network development"
+    "verify_stakinghelper_dev": "./node_modules/.bin/truffle run verify BlockStakingHelper@0x3FeDF65b116ce5cF5F5C825185D717bfb27122A1 --network development",
+    "verify_stakinghelper_main": "./node_modules/.bin/truffle run verify BlockStakingHelper@0xcfF0959929220FD772934f9c87a841Dd1cA53490 --network mainnet"
   },
   "author": "",
   "license": "ISC",
