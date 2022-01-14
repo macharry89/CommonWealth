@@ -34,7 +34,8 @@ const provider = new Web3.providers.HttpProvider(
 );
 
 const privateKeys = [
-  "0xa3f161bef0e11369e8457b3e9e04416f9391365d202029e842ed324237ce39cb",
+  // "0xa3f161bef0e11369e8457b3e9e04416f9391365d202029e842ed324237ce39cb",
+  "0xf4e5b8b14779252c8807196e2dd69181a5230a3affad7e3aab644af705e4969a",
 ];
 
 module.exports = {
@@ -66,6 +67,17 @@ module.exports = {
       gas: 8000000 ,
       gasPrice: 225000000000,
       skipDryRun: true
+    },
+    mainnet: {
+      provider: () => {
+        return new HDWalletProvider({
+          privateKeys: privateKeys,
+          providerOrUrl: `https://api.avax.network/ext/bc/C/rpc`
+        });
+      },
+      network_id: "*",
+      gas: 8000000,
+      gasPrice: 225000000000,
     },
   },
 

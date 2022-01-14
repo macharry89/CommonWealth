@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "verify_treasury_dev": "./node_modules/.bin/truffle run verify BlockTreasury@0x0D0817A7De44FE7685c2e35144AD8dAB5Df062fB --network fuji"
+    "verify_treasury_dev": "./node_modules/.bin/truffle run verify BlockTreasury@0x0D0817A7De44FE7685c2e35144AD8dAB5Df062fB --network fuji",
+    "verify_treasury_main": "./node_modules/.bin/truffle run verify BlockTreasury@0xfaCcc55Dd72a67BFF9416400646bc9052d68E979 --network mainnet"
   },
   "author": "",
   "license": "ISC",
