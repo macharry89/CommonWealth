@@ -5,7 +5,7 @@ const StandardBondingCalculator = artifacts.require("BlockBondingCalculator");
 
 module.exports = function (deployer) {
   // const timeERC20TokenAddress = '0x0cF22e3d8dB81CB9e606f3a7837c48c1B6fC9a27';
-  const blockAddress = '0x6fF83eb56d9Df4007eb3593757351F2FB0011F19';
+  const blockAddress = '0x3820325e38050F878C66e3e544c2D0098c8e5a1F';
   const standardBondingCalculator = deployer.deploy(StandardBondingCalculator, blockAddress);
   // const treasury = deployer.deploy(Treasury);
   // const wonderZapIn = deployer.deploy(WonderZapIn, daoAddress.address);
