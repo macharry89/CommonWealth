@@ -601,7 +601,7 @@ contract BlockStaking is Ownable {
     }
 
     /**
-        @notice retrieve MEMO from warmup
+        @notice retrieve zBLOCKS from warmup
         @param _recipient address
      */
     function claim ( address _recipient ) external {
@@ -615,7 +615,7 @@ contract BlockStaking is Ownable {
     }
 
     /**
-        @notice forfeit MEMO in warmup and retrieve Block
+        @notice forfeit zBLOCKS in warmup and retrieve Block
      */
     function forfeit() external {
         Claim memory info = warmupInfo[ msg.sender ];
@@ -635,7 +635,7 @@ contract BlockStaking is Ownable {
     }
 
     /**
-        @notice redeem MEMO for Block
+        @notice redeem zBLOCKS for Block
         @param _amount uint
         @param _trigger bool
      */
@@ -649,7 +649,7 @@ contract BlockStaking is Ownable {
     }
 
     /**
-        @notice returns the MEMO index, which tracks rebase growth
+        @notice returns the zBLOCKS index, which tracks rebase growth
         @return uint
      */
     function index() external view returns ( uint ) {

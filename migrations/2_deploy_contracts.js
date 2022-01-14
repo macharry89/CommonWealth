@@ -1,7 +1,7 @@
 const Staking = artifacts.require("BlockStaking");
 
 module.exports = function (deployer) {
-  const blockAddress = '0x6fF83eb56d9Df4007eb3593757351F2FB0011F19';
-  const zBlockERC20Address = '0x6C766bC8C5Cee89Ac43BD57630E3aF613e7EB89e';
+  const blockAddress = '0x3820325e38050F878C66e3e544c2D0098c8e5a1F';
+  const zBlockERC20Address = '0x2A392B930eE7B325aBA70C810199C97f6Ae3a252';
   deployer.deploy(Staking, blockAddress, zBlockERC20Address, 28800, 440, 1641858767);
 };
